@@ -131,7 +131,8 @@ p {
     color: var(--cor006);
     text-align: center;
 }
-#texto h1 {
+#texto h2 {
+    font-size: 5em;
     padding-top: 50px;
     color: var(--cor006);
 }
@@ -187,11 +188,16 @@ footer p {
     }
     #texteimg .iconimg {
         padding-top: 20px;
-        margin-left: 115px;
+        margin-left: 95px;
     }
     #texteimg .iconcard {
         padding-top: 60px;
-        margin-left: 180px;
+        margin-left: 125px;
+    }
+    #texto h2 {
+        font-size: 3em;
+        padding-top: 50px;
+        color: var(--cor006);
     }
     
  }
