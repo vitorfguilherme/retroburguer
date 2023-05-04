@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+@font-face {
+    font-family:'Merriweather';
+    src: url('../font/Merriweather-Bold.ttf') format('opentype') ;
+    font-weight: normal;
+    font-style: normal;
+    
+}
+
+:root {
+    --cor001: #D9B13B;
+    --cor002: #F2A950;
+    --cor003: #A6442E; 
+    --cor004: #F2F2F2;
+    --cor005: #0D0D0D;
+    --cor006: #020605;
+
+
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Merriweather', Arial, Helvetica, sans-serif;
+    background: var(--cor006);
+}
+header {
+    margin-bottom: 40px;
+}
+.hamb1 {
+    border-radius: 50px;
+}
+#carousel-retro {
+    width: 100%;
+}
+.carousel-control-next, .carousel-control-prev {
+    width: 3%;
+}
+#texteimg {
+    background-color: var(--cor002);
+}
+
+
+
+/* Barra de navegação */
+
+nav.navbar-ed {
+    padding: 15px 0px;
+}
+
+.navbar-light .navbar-nav .nav-link:active {
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--cor002);
+}
+
+
+/* Final Barra de navegação */
+
+/* Botão */
+
+.btn-custom {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+
+.btn-amarelo {
+    background-color: var(--cor002);
+}
+.btn-center{
+    margin-left: 100px;
+}
+
+.btn-amarelo:hover {
+    background-color: var(--cor006);
+    color: white;
+    border: 1px solid white;
+}
+
+
+/* Formatação de texto */
+h1 {
+    padding-top: 10px;
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: -0.06em;
+    color: white;
+}
+h2 {
+    font-size: 1.5em;
+    letter-spacing: -0.06em;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.text1 {
+    margin-top: 70px;
+    text-align: center;
+}
+#texto {
+    background-color: white;
+    color: var(--cor006);
+    text-align: center;
+}
+#texto h1 {
+    padding-top: 50px;
+    color: var(--cor006);
+}
+#texteimg h4 {
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+footer  h5 {
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+footer p {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    
+    
+
+}
+
+#texteimg p {
+    color: black;
+    text-align: center;
+}
+
+#texteimg .iconimg {
+    padding-top: 20px;
+    margin-left: 50px;
+}
+
+#texteimg .iconcard {
+    padding-top: 60px;
+    margin-left: 80px;
+}
+
+/* dsadas */
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .btn-custom {
+        margin: 10px 15px;
+    }
+    #carousel-retro {
+        height: 100%;
+    }
+    #texteimg .iconimg {
+        padding-top: 20px;
+        margin-left: 115px;
+    }
+    #texteimg .iconcard {
+        padding-top: 60px;
+        margin-left: 180px;
+    }
+    
+ }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    h2 {
+        font-size: 1.5em;
+    }
+    .btn-custom {
+        margin: 10px 15px;
+    }
+    #texteimg .iconimg {
+        padding-top: 20px;
+        margin-left: 160px;
+    }
+    .img-fluid {
+        max-width: 100%;
+        height: 100%;
+    }
+    
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1{
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    p {
+        font-size: 0.8em;
+    }
+    #texteimg .iconimg {
+        padding-top: 20px;
+        margin-left: 1px;
+    }
+    #texteimg .iconcard {
+        padding-top: 60px;
+        margin-left: 30px;
+    }
+    .img-fluid {
+        max-width: 100%;
+        text-align: center;
+        margin-top: 120px;
+    }
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h2 {
+        font-size: 2em;
+    }
+    #texteimg .iconimg {
+        padding-top: 20px;
+        margin-left: 35px;
+    }
+    #texteimg .iconcard {
+        padding-top: 60px;
+        margin-left: 60px;
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 4.5em;
+    }
+    h2 {
+        font-size: 2em;
+        padding-bottom: 20px;
+    }
+ }
