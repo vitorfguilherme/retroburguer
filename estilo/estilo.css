@@ -60,8 +60,8 @@ nav.navbar-ed {
     padding: 15px 0px;
 }
 
-.navbar-light .navbar-nav .nav-link:active .nav-link:visited{
-    color: var(--cor003);
+.navbar-light .navbar-nav {
+    color: var(--cor002);
     font-weight: bold;
     text-transform: uppercase;
     
@@ -71,6 +71,15 @@ nav.navbar-ed {
     font-weight: bold;
     text-transform: uppercase;
     
+}
+/*
+.navbar-light .navbar-nav .nav-link:active .nav-link:visited {
+    color: red;
+
+}*/
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+   color: var(--cor002);
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
