@@ -60,8 +60,8 @@ nav.navbar-ed {
     padding: 15px 0px;
 }
 
-.navbar-light .navbar-nav .nav-link:active {
-    color: red;
+.navbar-light .navbar-nav .nav-link:active .nav-link:visited{
+    color: var(--cor003);
     font-weight: bold;
     text-transform: uppercase;
     
